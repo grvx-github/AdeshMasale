@@ -1,0 +1,490 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins, sans-serif;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --h-primary: #d53100;
+}
+.navSection .navbar {
+  padding: 0;
+  position: relative;
+  height: 6rem;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+.navbar-brand {
+  padding: 0;
+  position: absolute;
+  top: -1rem;
+}
+.navbar-brand img {
+  max-width: 10%;
+  align-items: center;
+}
+.navSection .nav-item {
+  padding-inline: 1rem;
+}
+.navSection .nav-link {
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+}
+.navSection .nav-link.active {
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  .bannerSection .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.bannerSection video {
+  width: 100%;
+}
+.bg-card-primary {
+  background-color: #ed1c24;
+}
+.bg-card-secondary {
+  background-color: #fa4047;
+}
+.cardSection {
+  text-align: center;
+}
+.cardSection .card {
+  height: 21rem;
+  border: none;
+  border-radius: 0;
+  padding-block: 1rem;
+}
+.cardSection .card-header {
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-weight: 600;
+}
+.cardSection .card-text {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+.cardSection .card-img-top {
+  margin-bottom: 3rem;
+}
+.cardSection .container-fluid {
+  padding: 0;
+}
+.cardSection .row > * {
+  padding: 0;
+}
+.thirdSection {
+  position: relative;
+}
+.fl {
+  position: absolute;
+  z-index: -1;
+  max-width: 20%;
+}
+.fl img {
+  max-width: 100%;
+}
+.floatingImg2 {
+  top: 3rem;
+  right: 1rem;
+}
+.floatingImg3 {
+  top: 13rem;
+  right: 2rem;
+}
+.thirdSection .centerText {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  line-height: 2rem;
+  padding-block: 4rem 2rem;
+}
+.centerText p {
+  font-size: 1.1rem;
+}
+.centerText a {
+  text-decoration: none;
+  color: inherit;
+}
+h2 {
+  color: var(--h-primary);
+  font-weight: 600;
+  font-size: 2.75rem;
+  margin-bottom: 2rem;
+}
+.vmBtn {
+  margin: auto;
+  width: 150px;
+  gap: 1rem;
+  border-radius: 25px;
+  position: relative;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vmBtn:hover .btnClr {
+  width: 100%;
+}
+.vmBtn:hover .btn-text {
+  color: #fff;
+}
+.btnClr {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  height: 100%;
+  width: 50px;
+  background-color: #000;
+  border-radius: 25px;
+}
+.btn-svg {
+  transform: translateX(-5px);
+  margin: 0 5px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.btn-text {
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.productsHome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 2.5rem auto;
+  min-height: 28vw;
+}
+.homeProduct {
+  width: 12vw;
+  height: 15vw;
+  margin: 30px 0;
+  animation-name: zoom-in-pro;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  position: relative;
+}
+.homeProduct img {
+  object-fit: contain;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.homeProduct:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+@keyframes zoom-in-pro {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.productsSection {
+  text-align: center;
+}
+.productsSection .nav-tabs {
+  margin: auto;
+  width: 33%;
+  background-color: #e4e2df;
+}
+.productsSection .nav-tabs li {
+  margin-inline: auto;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.productsSection .nav-tabs .nav-link {
+  border: none;
+  color: #000;
+}
+.productsSection .nav-tabs .nav-link.active {
+  background-color: transparent;
+  color: #d53100;
+}
+.sliderSection h2 {
+  text-align: center;
+}
+.sliderContainer {
+  width: 90%;
+  height: 340px;
+  margin: 50px auto 100px;
+  position: relative;
+}
+.homeSlider a {
+  text-decoration: none;
+  color: #d53100;
+  display: flex;
+}
+.homeSlider a:hover .card-img-top {
+  transform: scale(1.1);
+}
+.homeSlider .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 4px;
+  position: relative;
+  width: fit-content;
+}
+.homeSlider .card {
+  height: 340px;
+  width: 100%;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.homeSlider .card-img-top {
+  border-radius: 20px;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+.homeSlider .card-img-top img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.cardSection .card-img-top img {
+  max-width: 40%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.slick-slider,
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+.slick-slide {
+  width: 314px !important;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: #d53100;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arrow:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+.arrow svg polyline {
+  stroke: #fff;
+  stroke-width: 3px;
+}
+.prev-arr {
+  left: -50px;
+}
+.next-arr {
+  right: -60px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  padding: 2rem;
+}
+footer h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.footerNav {
+  margin-bottom: 2rem;
+}
+.footerNav .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.footerNav ul li {
+  padding-inline: 0.5rem;
+}
+.footerNav .nav-link.active {
+  color: #fff;
+}
+.footerColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+}
+footer li > a {
+  text-decoration: none;
+  color: inherit;
+}
+.socials {
+  text-align: right;
+}
+.sociallinks {
+  display: flex;
+  gap: 1.75rem;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+.sociallinks li a {
+  transition: all 0.3s ease;
+}
+.sociallinks li a:hover {
+  color: #d53100;
+}
+.contacts li {
+  margin-block-end: 0.75rem;
+  width: 70%;
+}
+.socials .text-muted li {
+  margin-block-end: 1rem;
+}
+.nav-link,
+h2,
+footer h6 {
+  display: inline-block;
+  position: relative;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d53100;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+h2:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.nav-link {
+  color: #fff;
+  padding-inline: 0 !important;
+  margin-inline: 0.4rem;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.titleWrap {
+  text-align: center;
+}
+
+/* Recipes Page */
+.recipesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 30px auto;
+  justify-content: center;
+}
+.recipesContainer .card-img-top {
+  width: 25vw;
+  height: 25vw;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.recipe img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  transition: all 0.3s ease;
+}
+.recipe {
+  margin: 30px;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  border: none;
+}
+.recipesContainer a {
+  text-decoration: none;
+  color: #d53100;
+}
+.recipe .card-title {
+  display: inline-block;
+  width: fit-content;
+  position: relative;
+}
+.recipe .card-title h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-block: 0.5rem;
+}
+.recipe .card-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d53100;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.recipesContainer a:hover .recipe .card-title::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.recipesContainer a:hover .recipe img {
+  transform: scale(1.1);
+}
